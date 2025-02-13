@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Partial Press</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Logo and Title Section -->
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+      <img
+        src="https://raw.githubusercontent.com/gist/beingenfa/8b35c47ba64d5be1ace33e3141846a17/raw/588535d9279df068fcc4744ee051aeb49d9fb97d/logo.svg"
+        alt="The Partial Press Logo"
+        style="max-width: 200px; height: auto;"
+      />
+      <div style="text-align: center;">
+        <h1 class="title">The Partial Press</h1>
+        <p class="sub-title">Half the story, twice the spin.</p>
+      </div>
+    </div>
+    <hr class="divider" />
+
+    <!-- Main Layout -->
+    <div class="row">
+      <!-- Scenario Selection Column -->
+      <div class="col" style="max-width: 500px;">
+        <div class="scenario-label">Select a Scenario</div>
+        <select id="scenarioSelect">
+          <!-- Will be populated by JS -->
+          <option value="">-- Choose a scenario --</option>
+        </select>
+        <div id="scenarioDescription"></div>
+        <button id="generateReportBtn">Generate Report</button>
+      </div>
+
+      <!-- Biased Articles Column -->
+      <div class="col" style="flex: 2;">
+        <div class="news-box" id="villainizingAlex">
+          <div class="news-header"></div>
+          <p></p>
+          <span class="tag">Villainizing Alex</span>
+        </div>
+        <div class="news-box" id="villainizingJordan">
+          <div class="news-header"></div>
+          <p></p>
+          <span class="tag">Villainizing Jordan</span>
+        </div>
+        <div class="news-box" id="alexVillainJordanHero">
+          <div class="news-header"></div>
+          <p></p>
+          <span class="tag">Villainizing Alex &amp; Painting Jordan as Hero</span>
+        </div>
+        <div class="news-box" id="jordanVillainAlexHero">
+          <div class="news-header"></div>
+          <p></p>
+          <span class="tag">Villainizing Jordan &amp; Painting Alex as Hero</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS files to load after the DOM is ready -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
