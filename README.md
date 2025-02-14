@@ -1,5 +1,8 @@
-# <img alt="The Partial Press Logo" height="60" src="docs/images/logo_with_name.svg"/> The Partial Press
+# <img alt="The Partial Press Logo" height="60" src="docs/images/logo_with_name.svg"/> [The Partial Press](https://beingenfa.github.io/the-partial-press/)
 
+[![Deploy static content to Pages](https://github.com/beingenfa/the-partial-press/actions/workflows/static.yml/badge.svg)](https://github.com/beingenfa/the-partial-press/actions/workflows/static.yml)
+
+[Demo Website](https://beingenfa.github.io/the-partial-press/)
 
 **The Partial Press** is an LLM-powered tool that generates *biased news reports* from interactions between two individuals. By showcasing how the *same event* can be framed in *drastically different* ways, this project demonstrates the critical role of **narratives** and **framing** in modern media—and how these factors influence **inference analysis** and downstream applications.
 
@@ -17,9 +20,10 @@
    - A Gradio-based interface that can do real-time inference.  
    - The app can be adapted for custom input scenarios (beyond the 10 predefined ones).  
   
-2. [TO DO] **Static Page**  
+2. **Static Page**  
    - A complementary static site (hosted on GitHub Pages) displays the ten scenarios and corresponding biased reports.  
    - Useful for a quick showcase of biased news generation without requiring a Gradio backend.
+   - [Link](https://beingenfa.github.io/the-partial-press/)
 
 ## Objective
 
